@@ -74,3 +74,26 @@ names = ['jon', 'clara', 'ben'];
 let toppings: Array<string>;
 names = ['chees', 'meat', 'vegetables'];
 
+
+
+// typle types for Array
+
+let something: [string, number, boolean];
+
+something = ['hack', 45, false];
+
+
+
+// aliases type
+type Height = 'small' | 'normal' | 'big';
+type SetHeight = (height: Height) => void;
+
+let height: Height = 'small';
+
+let changeHeight: SetHeight = (x) => {
+    height = x;
+}
+
+changeHeight('big');
+
+console.log(height);
